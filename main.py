@@ -47,10 +47,12 @@ main.config(menu=menu_bar)
 file_menu = tk.Menu(menu_bar)
 #new file,open file,save file,exit
 
-file_menu.add_cascade(label="New",command=new_file)
-file_menu.add_cascade(label="Open",command=open_file)
-file_menu.add_cascade(label="Save",command=save_file)
+menu_bar.add_cascade(label="File",menu=file_menu)
+
+file_menu.add_command(label="New",command=new_file)
+file_menu.add_command(label="Open",command=open_file)
+file_menu.add_command(label="Save",command=save_file)
 file_menu.add_separator()
-file_menu.add_cascade(label="Exit",command=main.quit)
+file_menu.add_command(label="Exit",command=main.quit)
 
 main.mainloop()
