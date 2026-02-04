@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox,filedialog
 
-from matplotlib import text
 
 main = tk.Tk()
 main.title("Simple Text Editor")
